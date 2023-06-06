@@ -24,6 +24,9 @@ gem "sqlite3", "~> 1.4"
 # https://github.com/jarmo/require_all
 gem "require_all"
 
+# gem "webpack", "~> 3.0"
+gem "psych", "< 4"
+
 # These gems will only be used when we are running the application locally
 group :development do
   # Used to generate seed data
@@ -32,7 +35,7 @@ group :development do
 
   # Auto-reload the server when files are changed
   # https://github.com/alexch/rerun
-  gem "rerun"
+  gem "rerun", "~> 0.13.1"
 
   gem "pry"
 end
@@ -44,5 +47,9 @@ group :test do
   gem "rack-test", "~> 1.1"
   gem "rspec-json_expectations", "~> 2.2"
 end
+
+
+
+gem "puma", "~> 6.3"
 
 
